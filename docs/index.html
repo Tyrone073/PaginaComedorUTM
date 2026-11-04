@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comedor UTM - Prototipo Web</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Libreria externa FontAwesome cargada mediante CDNJS para el uso de iconos vectoriales-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Header y navegacion Principal -->
+<header class="header">
+  <a class="logo" href="index.html" aria-label="Comedor UTM, ir al inicio">
+    <!-- Contenedor del logo con imagen del escudo -->
+    <span class="caja_img_logo" aria-hidden="true">
+        <img src="resources/img/LogoUTMFondoTransparente.png" alt="Escudo-Portoviejo">
+    </span>
+
+    <span>
+        <strong>Comedor UTM</strong>
+        <small>Universidad Técnica de Manabí</small>
+    </span>
+  </a>
+
+  <!-- Menu de navegacion superior con anclas (#) para desplazarse a cada seccion -->
+  <nav class="naveg_principal" id="naveg_principal" aria-label="Navegación principal">
+    <a class="boton_naveg activo" href="#populares">NUESTROS PLATOS</a>
+    <a class="boton_naveg" href="#comunidad">COMUNIDAD UTM</a>
+    <a class="boton_naveg" href="#eventos">DINÁMICAS & BENEFICIOS</a>
+  </nav>
+</header>
+
+<!-- Cuerpo Principal -->
+<main>
+  <!-- Estructura Grid de Tres Columnas-->
+  <div class="distribucion_tres_columnas">
+
+    <!-- Columna 1 Platos -->
+    <section class="columna_principal" id="populares">
+      <div class="header_columna">
+        <p class="etiqueta">NUESTROS PLATOS</p>
+        <h2>Los más pedidos</h2>
+      </div>
+
+      <!-- Lista de los 5 articulos de la primera columna -->
+      <div class="lista_articulos_columna">
+
+        <article class="tarjeta_articulo tarjeta_comida_col">
+          <img src="resources/img/polloHornado.png" alt="Almuerzo del día">
+          <div class="contenido_tarjeta_col">
+            <span class="etiqueta_plato">Popular</span>
+            <h3>Almuerzo del día</h3>
+            <p>Proteína a elección, arroz, menestra casera, ensalada fresca y jugo natural.</p>
+            <div class="pie_tarjeta_col">
+              <strong>$4.00</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_comida_col">
+          <img src="resources/img/arrozColorado.png" alt="Arroz con pollo criollo">
+          <div class="contenido_tarjeta_col">
+            <h3>Arroz con pollo criollo</h3>
+            <p>Arroz sazonado tradicionalmente con pollo desmenuzado, vegetales y maduro frito.</p>
+            <div class="pie_tarjeta_col">
+              <strong>$3.50</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_comida_col">
+          <img src="resources/img/CaldoDeGallina.png" alt="Caldo de gallina criolla">
+          <div class="contenido_tarjeta_col">
+            <h3>Caldo de gallina criolla</h3>
+            <p>Sopa caliente y reconfortante preparada con gallina de campo, yuca y cilantro.</p>
+            <div class="pie_tarjeta_col">
+              <strong>$3.50</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_comida_col">
+          <img src="resources/img/VichePescado.png" alt="Viche de pescado manabita">
+          <div class="contenido_tarjeta_col">
+            <span class="etiqueta_plato">Tradicional</span>
+            <h3>Viche de pescado manabita</h3>
+            <p>Receta tradicional con fondo de maní, choclo, maduro, plátano verde y pescado fresco.</p>
+            <div class="pie_tarjeta_col">
+              <strong>$4.50</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_comida_col">
+          <img src="resources/img/cevicheMixto.png" alt="Ceviche mixto manabita">
+          <div class="contenido_tarjeta_col">
+            <h3>Ceviche mixto especial</h3>
+            <p>Mariscos frescos marinados con limón y especias, acompañados de chifles y canguil.</p>
+            <div class="pie_tarjeta_col">
+              <strong>$3.50</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Columna 2 Top Compradores -->
+    <section class="columna_principal" id="comunidad">
+      <div class="header_columna">
+        <p class="etiqueta">COMUNIDAD UTM</p>
+        <h2>Top Compradores</h2>
+      </div>
+
+      <!-- Lista de los 5 articulos de la primera columna -->
+      <div class="lista_articulos_columna">
+
+        <article class="tarjeta_articulo tarjeta_ranking_col">
+          <div class="medalla_ranking"><i class="fa-solid fa-medal"></i></div>
+          <div class="contenido_ranking_col">
+            <div class="cabecera_ranking">
+              <h3>Carlos Mendoza</h3>
+              <span class="insignia_ranking">Líder del mes</span>
+            </div>
+            <p class="meta_ranking">Ingeniería de Sistemas · <strong>34 pedidos</strong></p>
+            <p class="premio_ranking"><i class="fa-solid fa-gift"></i> Beneficio: 2 almuerzos ejecutivos gratis.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_ranking_col">
+          <div class="medalla_ranking"><i class="fa-solid fa-medal"></i></div>
+          <div class="contenido_ranking_col">
+            <div class="cabecera_ranking">
+              <h3>Andrea Cedeño</h3>
+              <span class="insignia_ranking">Segundo puesto</span>
+            </div>
+            <p class="meta_ranking">Facultad de Ciencias de la Salud · <strong>29 pedidos</strong></p>
+            <p class="premio_ranking"><i class="fa-solid fa-gift"></i> Beneficio: 1 almuerzo del día gratis.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_ranking_col">
+          <div class="medalla_ranking"><i class="fa-solid fa-medal"></i></div>
+          <div class="contenido_ranking_col">
+            <div class="cabecera_ranking">
+              <h3>Mateo Briones</h3>
+              <span class="insignia_ranking">Tercer puesto</span>
+            </div>
+            <p class="meta_ranking">Ingeniería Civil · <strong>25 pedidos</strong></p>
+            <p class="premio_ranking"><i class="fa-solid fa-gift"></i> Beneficio: 1 combo completo a elección.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_ranking_col">
+          <div class="medalla_ranking"><i class="fa-solid fa-trophy"></i></div>
+          <div class="contenido_ranking_col">
+            <div class="cabecera_ranking">
+              <h3>Facultad Más Activa</h3>
+              <span class="insignia_ranking">FICA</span>
+            </div>
+            <p class="meta_ranking">Facultad de Ciencias Informáticas · <strong>+210 pedidos</strong></p>
+            <p class="premio_ranking"><i class="fa-solid fa-gift"></i> Beneficio: 15% de descuento grupal.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_ranking_col">
+          <div class="medalla_ranking"><i class="fa-solid fa-star"></i></div>
+          <div class="contenido_ranking_col">
+            <div class="cabecera_ranking">
+              <h3>Club de Fidelidad UTM</h3>
+              <span class="insignia_ranking">Puntos</span>
+            </div>
+            <p class="meta_ranking">Acumula 1 punto por cada $1 gastado.</p>
+            <p class="premio_ranking"><i class="fa-solid fa-gift"></i> Canjea puntos por promociones.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Columna 3 Eventos -->
+    <section class="columna_principal" id="eventos">
+      <div class="header_columna">
+        <p class="etiqueta">DINÁMICAS & BENEFICIOS</p>
+        <h2>Eventos y Premios</h2>
+      </div>
+
+      <!-- Lista de los 5 articulos de la primera columna -->
+      <div class="lista_articulos_columna">
+
+        <article class="tarjeta_articulo tarjeta_dinamica_col">
+          <div class="cabecera_dinamica">
+            <span class="etiqueta_dinamica academica">Incentivo Académico</span>
+            <span class="icono_dinamica"><i class="fa-solid fa-graduation-cap"></i></span>
+          </div>
+          <h3>Beca a la Excelencia: Promedio ≥ 9.0</h3>
+          <p>¿Aprobaste con nota de 9 o superior en 3 materias? Presenta tu récord académico y recibe 1 semana de almuerzos gratis.</p>
+          <div class="requisito_dinamica">
+            <span><i class="fa-solid fa-clipboard-list"></i> Requisito: Récord académico + carnet</span>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_dinamica_col">
+          <div class="cabecera_dinamica">
+            <span class="etiqueta_dinamica semestral">Sorteo Semestral</span>
+            <span class="icono_dinamica"><i class="fa-solid fa-bullseye"></i></span>
+          </div>
+          <h3>Reto Fin de Semestre Sin Supletorios</h3>
+          <p>Participa en el sorteo de 10 tarjetas de consumo mensual de $30 aprobando todas tus materias.</p>
+          <div class="requisito_dinamica">
+            <span><i class="fa-solid fa-calendar-days"></i> Registro: Última semana del semestre</span>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_dinamica_col">
+          <div class="cabecera_dinamica">
+            <span class="etiqueta_dinamica semanal">Promoción Semanal</span>
+            <span class="icono_dinamica"><i class="fa-solid fa-utensils"></i></span>
+          </div>
+          <h3>Jueves de 2x1 Manabita</h3>
+          <p>Todos los jueves disfruta de 2x1 en almuerzos tradicionales viniendo con un compañero.</p>
+          <div class="requisito_dinamica">
+            <span><i class="fa-solid fa-users"></i> Válido: De 11:30 a 14:30</span>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_dinamica_col">
+          <div class="cabecera_dinamica">
+            <span class="etiqueta_dinamica especial">Cumpleaños UTM</span>
+            <span class="icono_dinamica"><i class="fa-solid fa-cake-candles"></i></span>
+          </div>
+          <h3>Tu Almuerzo de Cumpleaños es Gratis</h3>
+          <p>Presenta tu cédula o carnet el día de tu cumpleaños y tu almuerzo va por la casa.</p>
+          <div class="requisito_dinamica">
+            <span><i class="fa-solid fa-gift"></i> Incluye: Almuerzo + bebida</span>
+          </div>
+        </article>
+
+        <article class="tarjeta_articulo tarjeta_dinamica_col">
+          <div class="cabecera_dinamica">
+            <span class="etiqueta_dinamica ecologica">Iniciativa Eco-UTM</span>
+            <span class="icono_dinamica"><i class="fa-solid fa-leaf"></i></span>
+          </div>
+          <h3>Trae tu Tupper y Ahorra 10%</h3>
+          <p>Trae tu propio recipiente reutilizable y recibe un 10% de descuento directo.</p>
+          <div class="requisito_dinamica">
+            <span><i class="fa-solid fa-recycle"></i> Por un campus limpio</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <a class="logo_footer">Comedor UTM</a>
+  <p>Prototipo académico de interfaz web.</p>
+  <p>Diseño realizado con fines educativos para la asignatura <strong>Interacción Humano-Computador</strong> * UTM * 2026.</p>
+</footer>
+
+</body>
+</html>
